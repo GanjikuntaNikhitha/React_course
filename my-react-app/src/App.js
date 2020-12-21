@@ -2,12 +2,30 @@ import React, { Component } from 'react';
 import './App.css';
 import Person from './Person/Person.js';
 class App extends Component {
+    state = {
+        person: [
+            { name: 'nikki', role:'frontend' },
+            { name: 'naresh', role:'automation'}
+        ]
+    }
+    switchAcessHandler = () => {
+        console.log("clicked...")
+        //this.state.person[0].name = 'Nikhita Reddy' we cannot use like this 
+
+        this.setState({
+            person: [
+                { name: "Nikhita Reddy" },
+                { name: "Naresh Reddy"}
+                ]
+        })
+    }
   render() {
     return (
       <div className="App">
             <h1>I am a react App</h1>
-            <Person name='naresh' role='automation'></Person>
-            <Person name='nikki' role='frontend'>
+            <button onClick={this.switchAcessHandler}>Switch Aceess</button>
+            <Person name={this.state.person[0].name} role={this.state.person[0].role}></Person>
+            <Person name={this.state.person[1].name} role={this.state.person[1].role}>
                 <li>
                     <ol>maths</ol>
                     </li>
