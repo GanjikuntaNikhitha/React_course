@@ -6,7 +6,10 @@ class App extends Component {
     return (
       <div className="App">
             <h1>I am a react App</h1>
-            <Person></Person>
+            <Person name='naresh' role='automation'></Person>
+            <Person name='nikki' role='frontend'></Person>
+            <Person name='iphon' role='iphoneDev'></Person>
+
       </div>
     );
       //the above code javascript code converts into jsx as shown below
