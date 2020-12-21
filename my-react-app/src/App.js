@@ -7,7 +7,14 @@ class App extends Component {
       <div className="App">
             <h1>I am a react App</h1>
             <Person name='naresh' role='automation'></Person>
-            <Person name='nikki' role='frontend'></Person>
+            <Person name='nikki' role='frontend'>
+                <li>
+                    <ol>maths</ol>
+                    </li>
+                <li>
+                <ol>physics</ol>
+            </li>
+                My hobbie is listening songs</Person>
             <Person name='iphon' role='iphoneDev'></Person>
 
       </div>
