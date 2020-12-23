@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import Person from './Person/Person.js';
+import Input from './Input/Input.js';
+import Output from './Output/Output.js'
+
 class App extends Component {
     state = {
         person: [
@@ -34,6 +37,8 @@ class App extends Component {
             </li>
                 My hobbie is listening songs</Person>
             <Person name='iphon' role='iphoneDev'></Person>
+            <Input></Input>
+            <Output userName = 'Chotu'></Output>
 
       </div>
     );
